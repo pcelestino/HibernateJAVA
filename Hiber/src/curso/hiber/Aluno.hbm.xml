@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 01/09/2014 11:58:03 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+ <class name="curso.hiber.Aluno" table="ALUNOS">
+  <id name="alu_codigo" type="int">
+   <column name="ALU_CODIGO"/>
+   <generator class="increment"/>
+  </id>
+  <property generated="never" lazy="false" name="alu_nome" type="java.lang.String">
+   <column name="ALU_NOME"/>
+  </property>
+  <property generated="never" lazy="false" name="alu_curso" type="java.lang.String">
+   <column name="ALU_CURSO"/>
+  </property>
+  <property generated="never" lazy="false" name="alu_cidade" type="java.lang.String">
+   <column name="ALU_CIDADE"/>
+  </property>
+  <property generated="never" lazy="false" name="alu_fone" type="java.lang.String">
+   <column name="ALU_FONE"/>
+  </property>
+ </class>
+</hibernate-mapping>
